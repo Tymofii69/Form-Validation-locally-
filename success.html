@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result">
+        The Name is equal to: <span id="data1">Name</span><br>
+        The Email is equal to: <span id="data2">Email</span><br>
+        The Phone is equal to: <span id="data3">Phone</span><br>
+    </div>    
+
+    <script>
+        document.getElementById("data1").innerHTML = localStorage.getItem("firstValue");
+        document.getElementById("data2").innerHTML = localStorage.getItem("secondValue");
+        document.getElementById("data3").innerHTML = localStorage.getItem("thirdValue") + localStorage.getItem("lastValue");
+    </script>
+</body>
+</html>
